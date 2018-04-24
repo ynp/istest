@@ -1,0 +1,135 @@
+/*全局样式*/
+*{margin:0;padding:0;list-style:none;}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {display: block;}
+.clearfix:after {clear:both;content:"";display:block;font-size:0;height:0;visibility:hidden}
+ input,button,select,textarea{outline:none}
+.clearfix {zoom:1}
+.marginT10{margin-top:15px;}
+.marginT30{margin-top:30px;}
+.marginB10{margin-bottom:15px;}
+.marginL10{margin-left:1%;}
+.floatL{float:left;}
+.floatR{float:right;}
+
+body{font-family:Microsoft Yahei,SimHei;font-size:12px;line-height:20px;color:#fff;background:#f3f5f5;}
+input,select.option,textarea{font-family:Microsoft Yahei,SimHei;}
+input[type=button],button[type=button]{ cursor:pointer; display:inline-block}
+
+/*电站概况*/
+.powerStation{width:100%;background:#fff;border:#e7e8e8 solid 1px;}
+.powerStation dl{width:100%;height:50px;line-height:50px;font-size:14px;padding:0 5px;margin:0;}
+.powerStation dl:nth-child(odd){background:#e8f1f4;}
+.powerStation dl dt{float:left;width:40%;line-height:50px;font-weight:normal;color:#425560;}
+.powerStation dl dd{float:left;width:60%;line-height:50px;color:#425560;}
+.powerStation dl dd strong{display:block;float:left;width:80%;font-weight:normal;}
+.powerStation dl dd em{display:block;float:left;width:20%;font-style:normal;text-align:right;}
+.powerStation img{width:100%;height:159px;}
+.tit1{width:100%;height:50px;line-height:50px;background:#fff;font-size:18px;color:#2e3132;padding-left:20px;}
+.tit2{width:100%;height:40px;line-height:40px;background:#5faac4;font-size:16px;color:#fff;padding-left:20px;margin-bottom:10px;}
+.tit2 span{display:block;float:left;width:60%;}
+.tit2 em{float:left;width:30%;height:1px;background:#9fccdc;margin:20px 0 0 0;}
+.tit3{width:100%;height:50px;line-height:50px;background:#6399c1;font-size:18px;color:#fff;padding-left:20px;}
+.tit4{width:100%;height:50px;line-height:50px;background:#425560;font-size:18px;color:#fff;padding-left:20px;}
+.detail{width:100%;padding:8px;box-sizing:border-box;overflow:hidden;}
+
+/*气象*/
+.weather{width:100%;margin:30px 0;background:#fff;overflow:hidden;}
+.weather .detail{border:#c8d5da solid 1px;padding:0;}
+.weather dl{overflow:hidden;width:100%;line-height:40px;color:#425560;font-size:14px;padding:23px 2%;overflow:hidden;margin:0;}
+/*.weather dl:nth-child(1){border-right:#d9dddf solid 1px;border-bottom:#d9dddf solid 1px;}
+.weather dl:nth-child(2){border-bottom:#d9dddf solid 1px;}
+.weather dl:nth-child(3){border-right:#d9dddf solid 1px;}*/
+.weather dl dt{float:left;width:30%;background:url(../images/icon.png) no-repeat;width:35px;height:35px;margin-top:5px;}
+.weather dl dt.icon01{background-position:0 -125px;}
+.weather dl dt.icon02{background-position:-30px -125px;}
+.weather dl dt.icon03{background-position:-65px -125px;}
+.weather dl dt.icon04{background-position:-98px -125px;}
+.weather dl dd{float:right;width:65%;}
+.weather dl dd strong{display:block;float:left;color:#425560;font-size:26px;}
+.weather dl dd em{font-style:normal;font-size:14px;line-height:30px;display:block;float:left;margin-left:5px;}
+.weather dl dd span{display:block;width:100%;}
+
+/*电量数据展示*/
+.dataTip{width:100%;background:#fff;border:#e7e8e8 solid 1px;overflow:hidden;padding:2%;box-sizing:border-box;}
+.dataTip dl{margin:0;width:20%;float:left;overflow:hidden;}
+.dataTip dl dt{width:40%;float:left;position:relative;padding-right:5px;}
+.dataTip dl dt img{width:100%;height:69px;}
+.dataTip dl dd{width:60%;float:left;}
+.dataTip dl dd p{color:#5a5b79;margin:0;}
+.dataTip dl dd p span{font-size:14px;}
+.dataTip dl dd p:nth-child(2){font-size:10px;color:rgba(90,91,121,0.5)} 
+.dataTip dl dd p strong{font-size:18px;color:rgba(90,91,121,1);margin-right:5px;}
+.dataTip dl dd p:nth-child(3){font-size:12px;} 
+.dataTip dl dd p button{padding:3px 3px;background:#f09042;border-radius:3px;border:0;color:#fff;margin-left:5px;}
+/*功率-发电量-电流-曲线图*/
+.powerCurve{width:100%;height:373px;border:#e7e8e8 solid 1px;background:#5ba7c1;position:relative; }
+.powerCurve img{width:100%;height:292px;}
+
+/*周日按钮组*/
+.week-day{position:absolute;top:55px;right:80px;}
+.week-day button{padding:1px 20px;border:#97c4d3 solid 1px;background: #3c6979;color:#fff;}
+.week-day .focus{color:#fff;border:#97c4d3 solid 1px;background:#519cb6;}
+/*选项卡*/
+.Tab_tit{width:100%;height:50px;background:#fff;line-height:50px;font-size:18px;color:#2e3132;margin:0;padding-left:20px;border-bottom:#e7e8e8 solid 1px;}
+.Tab_tit li{float:left;margin-right:50px;cursor:pointer;color:#b9b9b9;}
+.Tab_tit li.hover{color:#2e3132;}
+/*投资*/
+.invest{width:100%;height:263px;background:#fff;border:#e7e8e8 solid 1px;}
+.invest img{width:100%;height:202px;}
+
+/*节能减排*/
+.energySaving{background:#fff;border:#d9dddf solid 1px;}    
+.energySaving .tit1{border-bottom:#d9dddf solid 1px;}
+.energySaving dl{width:100%;height:136px;margin:8px 0;padding-top:20px;}
+.energySaving dl.gray{background:#626566 url(../images/hill.png) no-repeat center bottom;background-size:100% 50%}
+.energySaving dl.blue{background:#4aa4c3 url(../images/hill.png) no-repeat center bottom;background-size:100% 50%}
+.energySaving dl.green{background:#88b86d url(../images/hill.png) no-repeat center bottom;background-size:100% 50%}
+.energySaving dl.orange{background:#eb9046 url(../images/hill.png) no-repeat center bottom;background-size:100% 50%}
+.energySaving dl dt{font-size:12px;font-weight:normal;text-align:center;}
+.energySaving dl dt strong{font-size:20px;color:#fff;font-weight:normal;margin-right:4px;}
+.energySaving dl dd{text-align:center;font-size:14px;}
+.energySaving dl dd span{display:block;margin:0 auto;background:url(../images/icon.png) no-repeat;width:30px;height:30px;margin:10px auto}
+.energySaving dl dd span.icon05{background-position:0 -166px;}
+.energySaving dl dd span.icon06{background-position:-30px -166px;}
+.energySaving dl dd span.icon07{background-position:-65px -163px;}
+.energySaving dl dd span.icon08{background-position:-93px -166px;}
+/*设备运行状态*/
+.equipmentState{background:#fff;border:#d9dddf solid 1px;}    
+.equipmentState .tit1{border-bottom:#d9dddf solid 1px;}
+.equipmentState .detail{padding:0;}
+.equipmentState .Tab_tit{border:0;height:36px;line-height:36px;background:#cbd3d5;}
+.equipmentState .Tab_tit li{float:left;margin:0;font-size:14px;color:#fff;width:33%;}
+.equipmentState .Tab_tit li.hover{color:#425560;}
+.equipmentState dl{width:100%;height:35px;margin:0;line-height:32px;border-top:#e7e8e8 solid 1px;padding-top:4px;}
+.equipmentState dl dt{width:30%;float:left;}
+.equipmentState dl dt span{display:block;margin:0 auto;width:72px;height:24px;line-height:24px;border-radius:3px;text-align:center;}
+.equipmentState dl.green dt span{background:#80b661;}
+.equipmentState dl.yellow dt span{background:#afab4a;}
+.equipmentState dl.orange dt span{background:#d49a55;}
+.equipmentState dl.red dt span{background:#d27552;}
+.equipmentState dl.gray dt span{background:#626566;}
+.equipmentState dl dd{width:70%;float:left;color:#7a8890;font-size:14px;}
+.equipmentState dl dd strong{display:block;float:left;width:80%;text-align:center;font-size:16px;}
+.equipmentState dl.green  dd strong{color:#80b661;}
+.equipmentState dl.yellow  dd strong{color:#afab4a;}
+.equipmentState dl.orange  dd strong{color:#d49a55;}
+.equipmentState dl.red  dd strong{color:#d27552;}
+.equipmentState dl.gray  dd strong{color:#626566;}
+@media (max-width:1200px){
+	
+.energySaving {margin-top:30px;}
+
+}
+@media (max-width:992px){
+	
+.energySaving {margin-top:30px;}
+
+}
+
+@media (max-width:768px){
+	
+.energySaving {margin-top:30px;}
+
+}
+
+

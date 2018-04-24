@@ -1,0 +1,108 @@
+<html style="height: 100%">
+<head>
+<meta charset="utf-8">
+</head>
+<body style="height: 100%; margin: 0">
+	<div id="container" style="height: 100%"></div>
+
+	<script src="./static/common/plugins/jQuery/jquery-2.2.3.min.js"></script>
+	<script src="./static/common/plugins/echarts/echarts.min.js"></script>
+	<script type="text/javascript">
+		var dom = document.getElementById("container");
+		var myChart = echarts.init(dom);
+		var app = {};
+		option = null;
+		
+		//模拟最小值
+ 		var minNum = 0;
+		//模拟最大值
+ 		var maxNum = 1500;
+ 		//数据量
+ 		var nums = 10000;
+ 		
+		function buildEchart(data) {
+			var option = {
+				title : {
+					text : '展示' + nums + '数据量数据',
+					left : 'center',
+					top : 0
+				},
+				visualMap : {
+					min : minNum,
+					max : maxNum,
+					dimension : 1,
+					orient : 'vertical',
+					right : 10,
+					top : 'center',
+					text : [ 'HIGH', 'LOW' ],
+					calculable : true,
+					inRange : {
+						color : [ '#f2c31a', '#24b7f2' ]
+					}
+				},
+				tooltip : {
+					trigger : 'item',
+					axisPointer : {
+						type : 'cross'
+					}
+				},
+				xAxis : [ {
+					type : 'value'
+				} ],
+				yAxis : [ {
+					type : 'value'
+				} ],
+				series : [ {
+					name : 'price-area',
+					type : 'scatter',
+					symbolSize : 5,
+					// itemStyle: {
+					//     normal: {
+					//         borderWidth: 0.2,
+					//         borderColor: '#fff'
+					//     }
+					// },
+					data : data
+				} ]
+			};
+
+			myChart.setOption(option);
+		}
+		
+		/********* 构建测试数据（前端构建）  *************/  
+ 		function randomNum(minNum, maxNum) {
+			switch (arguments.length) {
+			case 1:
+				return parseInt(Math.random() * minNum + 1);
+				break;
+			case 2:
+				return parseInt(Math.random() * (maxNum - minNum + 1) + minNum);
+				break;
+			default:
+				return 0;
+				break;
+			}
+		}
+
+		function buildData(num) {
+			var arr = new Array(); //先声明一维
+			for (var i = 0; i < num; i++) { //一维长度为5
+				var tempArr = [];
+			     tempArr[0] = randomNum(minNum,maxNum); 
+			     tempArr[1] = randomNum(minNum,maxNum); 
+				arr.push(tempArr);
+			}
+			return arr;
+		}
+		
+		var myData = buildData(nums);
+		buildEchart(myData); 
+		
+		/********* 构建测试数据（后端构建）  *************/  
+		/* $.getJSON("./static/data/mydata.json", function(data) {
+			buildEchart(data)
+		}) */
+
+	</script>
+</body>
+</html>

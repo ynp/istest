@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" />
+<meta http-equiv="X-UA-Compatible" content="IE=9" />
+<meta
+	content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
+	name="viewport">
+<meta name="renderer" content="webkit">
+<title>版本发布信息</title>
+<link href="../bootstrap/css/bootstrap.css" rel="stylesheet" />
+<link href="../bootstrap/css/bootstrap-theme.css" rel="stylesheet" />
+<link rel="stylesheet" href="../dist/css/AdminLTE.min.css">
+<link rel="stylesheet" href="../dist/css/skins/_all-skins.min.css">
+<link rel="stylesheet"
+	href="../plugins/datatables/dataTables.bootstrap.css">
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+		  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+		  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		  <![endif]-->
+<style>
+*, .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+	font-family: Microsoft Yahei, SimHei;
+}
+</style>
+</head>
+<body style="background-color: transparent;">
+	<section class="content">
+		<section id="layout">
+			<h2 class="page-header">
+				<a href="#layout">2016-12-12 版本 (SVN3538)</a>
+			</h2>
+			<p class="lead">此版本更新内容如下:</p>
+			<ul>
+			<li>调整光伏逆变器和风电机组设置的时间展示位置</li>
+			<li>修改首页电场信息部分显示标题</li>
+			<li>登录时，光标初始放在用户名输入框内</li>
+			<li>调整系统设置模块，模态框的关闭方式</li>
+			</ul>
+			<h2 class="page-header">
+				<a href="#layout">2016-12-05 版本 (SVN3492)</a>
+			</h2>
+			<p class="lead">此版本更新内容如下:</p>
+			<ul>
+			<li>解决曲线页面滚动条问题</li>
+			<li>修改光伏气象曲线样式</li>
+			<li>修改配置文件编码为UTF-8</li>
+			<li>调整首页坐标样式</li>
+			<li>调整光伏组件设置与风电机组型号设置展示效果</li>
+			<li>调整光伏和风电电场的增改的弹出层的布局</li>
+			<li>调整系统设置模块增改时单位的显示位置</li>
+			<li>将气象模块儿的导出事件绑定提到公共模块儿，并在导出前增加逻辑判断</li>
+			<li>修复频率分布模块儿选择电场时测风塔未变化的问题，并进一步增加查询导出时对测风塔的验证</li>
+			<li>光伏组件设置与机组型号设置样式调整</li>
+			<li>解决时间控件火狐浏览器不兼容问题</li>
+			<li>修正用户登出后无法，点击确定按钮没有响应问题</li>
+			<li>加入过期时间配置</li>
+			<li>注销用户代码优化</li>
+			</ul>
+			<h2 class="page-header">
+				<a href="#layout">2016-11-28 版本 (SVN3430)</a>
+			</h2>
+			<p class="lead">此版本更新内容如下:</p>
+			<ul>
+				<li>调整功率预测条件框样式</li>
+				<li>调整气象信息条件框样式</li>
+				<li>调整统计分析条件框样式</li>
+				<li>调整预测、气象、统计分析中曲线滚动条问题</li>
+				<li>修复切换电场数据显示不正确</li>
+				<li>短期、超短期、气象预测的预测标识和预测时间可配置化</li>
+				<li>调整系统设置用户增改时的用户体验，新增或修改失败时，不会直接关闭已填写数据的弹出框</li>
+				<li>调整整个首页的展示</li>
+				<li>增加逆变器和风机未知状态的展示</li>
+				<li>调整机组型号设置和光伏组件设置相关的方法与界面展示内容</li>
+				<li>调整公共组件部分变动后的相关界面展示</li>
+				<li>系统设置模块儿，增加查询时起始时间与结束时间选择限制的控制</li>
+				<li>调整光伏组件、机组型号设置、预测设置的界面</li>
+				<li>修复事件列表显示时，状态数据不对的问题</li>
+				<li>修复完整性统计时，数据完全缺失时的不显示当天统计数据的bug</li>
+				<li>修复新增电场时的对电场名称判断失效的bug</li>
+				<li>调整所涉及界面的查询框的相关设置</li>
+				<li>修改其他测出的多个bug</li>
+				<li>解决 版本控制 图标不显示问题</li>
+				<li>解决告警弹窗无法归位问题</li>
+				<li>重构公用js、css</li>
+				<li>修正展开菜单 ，有部分菜单无法看到的bug</li> 
+				<li>移除demo工程，相关配置移到web工程下</li>
+				<li>完成光伏和风电首页配置</li>
+				<li>停用测试用 的guest用户</li>
+			</ul>
+			<h2 class="page-header">
+				<a href="#layout">2016-11-21 版本 (SVN3336)</a>
+			</h2>
+			<p class="lead">此版本更新内容如下:</p>
+			<ul>
+				<li>更新验证框架库</li>
+				<li>完善登录页面,增加验证功能</li>
+				<li>增加退出系统确认功能</li>
+				<li>点击模块，若是当前模块阻止再次跳转</li>
+				<li>汉化时间选择控件</li>
+				<li>解决首页风电场只有一个选项的bug</li>
+				<li>更换系统设置表单增改验证的插件，完善相关界面的验证</li>
+				<li>去掉datatables插件列排序</li>
+				<li>对系统设置相关界面加上时间值的验证</li>
+				<li>修改首页展示的相关代码</li>
+				<li>修改告警事件的功能</li>
+				<li>修复测试提到的各种bug</li>
+				<li>调整气象信息页面查询条件选框</li>
+				<li>调整数据日报查询条件选框</li>
+				<li>修复实发功率统计分页问题</li>
+				<li>修复短期bug</li>
+				<li>修复导出文件名称为统一格式名称加日期，如：xxxx20161121</li>
+				<li>更新bootstrap-datepicker版本为1.6.4</li>
+				<li>增加列表无数据禁止使用导出按钮</li>
+				<li>增加时间控件的开始时间结束时间限制范围</li>
+			</ul>
+			<h2 class="page-header">
+				<a href="#layout">2016-11-15 版本 (SVN3267)</a>
+			</h2>
+			<p class="lead">此版本更新内容如下:</p>
+			<ul>
+				<li>修正数据源切换问题</li>
+				<li>登录验证需要改进</li>
+				<li>密码修改框问题</li>
+				<li>集成新的form验证框架</li>
+				<li>删除spfs和wpfs工程，更新相关配置</li>
+				<li>加入二级菜单焦点功能</li>
+				<li>二级菜单加上图标</li>
+				<li>修正权限管理各添加修改窗体无法关闭且数据不刷新问题</li>
+				<li>修正框架高度问题</li>
+				<li>登录和首页title改为 功率预测系统</li>
+				<li>完成功率误差统计显示精度</li>
+				<li>完成实发功率统计</li>
+				<li>完成平率分布导出功能</li>
+				<li>光伏电场累计日报、月报、年报查询、导出功能</li>
+				<li>光伏气象站风速、风向、温度、湿度、压力查询曲线、导出功能</li>
+				<li>光伏辐照量直方图查询、导出</li>
+				<li>逆变器日、月、年累计报表查询、导出</li>
+				<li>修改报警信息的展示样式</li>
+				<li>修改风机状态的展示图片</li>
+				<li>调整完整性统计获取记录总条数的获取方式</li>
+				<li>修复计划开机容量与限电囧路新增修改时间段验证的bug</li>
+				<li>替换已做功能所有页面提示框的信息</li>
+				<li>完成光伏系统设置模块功能的开发</li>
+				<li>完成光伏状态监测功能的开发</li>
+				<li>确认告警事件查询所有电场的信息，并加入电场名称的显示</li>
+				<li>系统设置新增和修改功能加入表单字段验证的相关处理</li>
+			</ul>
+			<h2 class="page-header">
+				<a href="#layout">2016-11-07 版本 (SVN3178)</a>
+			</h2>
+			<p class="lead">此版本更新内容如下:</p>
+			<ul>
+				<li>完成完整性统计功能开发</li>
+				<li>完成首页功能开发</li>
+				<li>完成告警功能开发</li>
+				<li>功率误差统计查询列表展示、导出Excel</li>
+				<li>风速误差统计查询列表展示，导出Excel</li>
+				<li>上传率统计查询列表展示</li>
+				<li>上传状态统计查询列表展示</li>
+				<li>频率分布统计（包括：并网功率、实发功率、测风塔风向、测风塔风速、风机风速、气象预报风速）查询列表展示</li>
+				<li>加入权限管理模块</li>
+				<li>去掉在线下载的字体，优化加载速度</li>
+				<li>优化登陆模块加入键盘事件</li>
+				<li>加入修改密码功能</li>
+				<li>去掉用户信息查看</li>
+				<li>重构header js代码</li>
+				<li>美化登录页面</li>
+			</ul>
+			<h2 class="page-header">
+				<a href="#layout">2016-10-31 版本 (SVN3097)</a>
+			</h2>
+			<p class="lead">此版本更新内容如下:</p>
+			<ul>
+				<li>短期预测曲线15分钟刷新一次，并添加导出功能</li>
+				<li>超短期预测曲线15分钟刷新一次，并添加导出功能</li>
+				<li>实发预测功率日报分页功能、导出功能</li>
+				<li>风速曲线查询、导出功能</li>
+				<li>风向玫瑰图查询、导出功能</li>
+				<li>温度曲线查询、导出功能</li>
+				<li>湿度曲线查询、导出功能</li>
+				<li>压力曲线查询、导出功能</li>
+				<li>完成系统状态查询</li>
+				<li>完成风机状态查询</li>
+				<li>完成事件查询</li>
+				<li>完成部分完整性统计的前端与后台代码</li>
+				<li>加入系统登陆验证框架及登陆验证页面</li>
+				<li>加入标题图标</li>
+				<li>去掉通知按钮</li>
+			</ul>
+			<h2 class="page-header">
+				<a href="#layout">2016-10-24 版本 (SVN3026)</a>
+			</h2>
+			<p class="lead">此版本更新内容如下:</p>
+			<ul>
+				<li>短期曲线展示</li>
+				<li>超短期曲线展示</li>
+				<li>实发预测功率日报</li>
+				<li>加入风场设置 增删改功能</li>
+				<li>加入预测设置 改功能</li>
+				<li>加入限电设置 增删改查以及导出等功能</li>
+				<li>加入机组设置 增删改功能</li>
+				<li>加入测风塔设置 增删改功能</li>
+				<li>加入计划开机容量 增删改查以及导出等功能</li>
+				<li>加入机组型号与功率曲线 增删改功能</li>
+				<li>菜单整理与动态化改造</li>
+				<li>加入页面导航功能</li>
+				<li>报表单页面化改造</li>
+			</ul>
+			<h2 class="page-header">
+				<a href="#layout">2016-10-17 版本 (SVN2979)</a>
+			</h2>
+			<p class="lead">此版本更新内容如下:</p>
+			<ul>
+				<li>多数据库切换</li>
+				<li>mybatis代码生成器</li>
+				<li>日志机制</li>
+				<li>权限控制基础框架</li>
+				<li>单元测试集成Demo</li>
+				<li>系统级操作记录跟踪</li>
+				<li>完成 风场设置、限电设置、机组设置、测风塔设置、计划开机容量设置、机组型号设置 的列表界面初步开发</li>
+				<li>完成 机组设置、机组型号、功率曲线、预测设置 等后台代码的初步开发</li>
+				<li>短期日、月、年报表，查询，导出，列表展示功能</li>
+				<li>超短期日、月、年报表，查询，导出，列表展示功能</li>
+				<li>电场累计日、月、年报表，查询，导出，列表展示功能</li>
+			</ul>
+		</section>
+	</section>
+	<!-- jQuery 2.2.3 -->
+	<script src="../plugins/jQuery/jquery-2.2.3.min.js"></script>
+	<!-- Bootstrap 3.3.6 -->
+	<script src="../bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>

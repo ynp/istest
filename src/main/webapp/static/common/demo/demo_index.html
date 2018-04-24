@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+	<head runat="server">
+		<meta http-equiv="Content-Type" content="textml; charset=utf-8" />
+		<title></title>
+		<link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+		<link href="../bootstrap/css/bootstrap-theme.min.css" rel="stylesheet" />
+		<script src="../plugins/jQuery/jquery-2.2.3.min.js"></script>
+		<script src="../bootstrap/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" href="../demo/css/demo_index.css" />
+		<script language="javascript" type="text/javascript">
+		<!--滑动门-->
+		 function setTab(name, cursel, n) {
+			for(i = 1; i <= n; i++) {
+				var menu = document.getElementById(name + i);
+				var con = document.getElementById("con_" + name + "_" + i);
+				menu.className = i == cursel ? "hover" : "";
+				con.style.display = i == cursel ? "block" : "none";
+				}
+			}
+		</script>
+	</head>
+
+	<body>
+		<div class="content">
+			<div class="row">
+				<div class="col-md-3 col-lg-3">
+					<div class="powerStation">
+						<div class="tit1">电站概况</div>
+						<div class="detail">
+							<img src="./images/dzIMG.jpg" alt="电站图片"/>
+							<div class="tit2"><span>济源分布式电站</span><em></em></div>
+							<dl>
+								<dt>电站容量</dt>
+								<dd><strong>39474</strong><em>MW</em></dd>
+							</dl>
+							<dl>
+								<dt>当前功率</dt>
+								<dd><strong>100</strong><em>KW</em></dd>
+							</dl>
+							<dl>
+								<dt>逆变器数量</dt>
+								<dd><strong>46</strong><em>台</em></dd>
+							</dl>
+							<dl>
+								<dt>安全生产天数</dt>
+								<dd><strong>2356</strong><em>天</em> </dd>
+							</dl>
+							<dl>
+								<dt>投产日期</dt>
+								<dd class="text-right">2014-11-17</dd>
+							</dl>
+						</div>
+					</div>
+					<div class="weather">
+						<div class="tit3">气象</div>
+						<div class="detail">
+							<div  class="col-sm-3 col-md-12 col-lg-6">
+								<dl>
+									<dt class="icon01"></dt>
+									<dd><strong>24</strong><em>w/㎡</em></dd>
+									<dd><span>福照度</span></dd>
+							     </dl>
+							</div>
+							<div  class="col-sm-3 col-md-12 col-lg-6">
+								<dl>
+									<dt class="icon02"></dt>
+									<dd><strong>39</strong><em>℃</em></dd>
+									<dd><span>温度</span></dd>
+								</dl>
+							</div>
+							<div  class="col-sm-3 col-md-12 col-lg-6">
+								<dl>
+									<dt class="icon03"></dt>
+									<dd><strong>8</strong><em>mph</em></dd>
+									<dd><span>风速</span></dd>
+								</dl>
+							</div>
+							<div  class="col-sm-3 col-md-12 col-lg-6">
+								<dl>
+									<dt class="icon04"></dt>
+									<dd><strong>323</strong><em>°</em></dd>
+									<dd><span>风向</span></dd>
+								</dl>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-9 col-lg-9">
+					<div class="dataTip">
+						<dl>
+							<dt>
+             	 		<div class="circle01"><img src="./images/circle01.jpg" /></div>
+             	 	</dt>
+							<dd>
+								<p><span>当日发电量</span></p>
+								<p><strong>38973.12</strong>kw.h</p>
+								<p>当日收益<button>￥383.23</button></p>
+							</dd>
+						</dl>
+						<dl>
+							<dt>
+             	 		<div class="circle02"><img src="./images/circle02.jpg" /></div>
+             	 	</dt>
+							<dd>
+								<p><span>当日发电量</span></p>
+								<p><strong>38973.12</strong>kw.h</p>
+								<p>当日收益<button>￥383.23</button></p>
+							</dd>
+						</dl>
+						<dl>
+							<dt>
+             	 		<div class="circle03"><img src="./images/circle03.jpg"/></div>
+             	 	</dt>
+							<dd>
+								<p><span>当日发电量</span></p>
+								<p><strong>38973.12</strong>kw.h</p>
+								<p>当日收益<button>￥383.23</button></p>
+							</dd>
+						</dl>
+						<dl>
+							<dt>
+             	 		<div class="circle04"><img src="./images/circle04.jpg" /></div>
+             	 	</dt>
+							<dd>
+								<p><span>当日发电量</span></p>
+								<p><strong>38973.12</strong>kw.h</p>
+								<p>当日收益<button>￥383.23</button></p>
+							</dd>
+						</dl>
+						<dl>
+							<dt>
+             	 		<div class="circle05"><img src="./images/circle05.jpg" /></div>
+             	 	</dt>
+							<dd>
+								<p><span>当日发电量</span></p>
+								<p><strong>38973.12</strong>kw.h</p>
+								<p>当日收益<button>￥383.23</button></p>
+							</dd>
+						</dl>
+					</div>
+					<div class="row marginT30">
+						<div class="col-md-12 col-lg-7">
+							<div class="powerCurve">
+								<ul class="Tab_tit">
+									<li id="one1" onClick="setTab('one',1,3)" class="hover">功率</li>
+									<li id="one2" onClick="setTab('one',2,3)">发电量</li>
+									<li id="one3" onClick="setTab('one',3,3)">电流</li>
+								</ul>
+						        <div class="Contentbox">
+							        <div id="con_one_1" style="display:block;"><img src="./images/gl_hdm.jpg"/></div>
+							        <div id="con_one_2" style="display:none;"><img src="./images/gl_hdm.jpg" /></div>
+							        <div id="con_one_3" style="display:none;"><img src="./images/gl_hdm.jpg" /></div>
+							    </div>
+							    <div class="btn-group week-day">
+									<button type="button" class="btn btn-info">周</button>
+							        <button type="button" class="btn btn-info">日</button>
+								</div>
+						    </div>
+						    <div class="invest marginT30">
+								<div class="tit4">投资收益</div>
+						        <div class="detail"><img src="./images/tzsy.jpg"/></div>
+						    </div>
+						</div>
+						<div class="col-md-12 col-lg-5">
+							<div class="energySaving">
+								<div class="tit1">节能减排</div>
+						        <div class="detail">
+						            <div class="col-xs-3 col-md-3 col-lg-6">
+							        	<dl class="gray">
+							        		<dt><strong>669.64</strong>吨</dt>
+							        		<dd><span class="icon05"></span></dd>
+							        		<dd>二氧化碳减排</dd>
+							        	</dl>
+						        	</div>
+						        	<div class="col-xs-3 col-md-3 col-lg-6">
+							        	<dl class="blue">
+							        		<dt><strong>38457</strong>万公里</dt>
+							        		<dd><span class="icon06"></span></dd>
+							        		<dd>汽车里程</dd>
+							        	</dl>
+							        </div>
+							        <div class="col-xs-3 col-md-3 col-lg-6">
+							        	<dl class="green">
+							        		<dt><strong>3862,11</strong>棵</dt>
+							        		<dd><span class="icon07"></span></dd>
+							        		<dd>减少森林砍伐</dd>
+							        	</dl>
+							        </div>
+							        <div class="col-xs-3 col-md-3 col-lg-6">
+							        	<dl class="orange">
+							        		<dt><strong>271.59</strong>吨</dt>
+							        		<dd><span class="icon08"></span></dd>
+							        		<dd>节约标准煤</dd>
+							        	</dl>
+						        	</div>
+						        </div>
+							</div>
+							<div class="equipmentState marginT30">
+								<div class="tit1">设备运行状态</div>
+						        <div class="detail">
+						        	<ul class="Tab_tit">
+										<li id="two1" onClick="setTab('two',1,3)" class="hover">逆变器状态</li>
+										<li id="two2" onClick="setTab('two',2,3)">含为零支路</li>
+										<li id="two3" onClick="setTab('two',3,3)">汇流通讯中断</li>
+								    </ul>
+						            <div class="Contentbox">
+							            <div id="con_two_1" style="display:block;">
+							            	<dl class="green">
+								        		<dt><span>正常运行</span></dt>
+								        		<dd><strong>56</strong>台</dd>
+								        	</dl>
+								        	<dl class="yellow">
+								        		<dt><span>正常停机</span></dt>
+								        		<dd><strong>10</strong>台</dd>
+								        	</dl>
+								        	<dl class="orange">
+								        		<dt><span>告警运行</span></dt>
+								        		<dd><strong>3</strong>台</dd>
+								        	</dl>
+								        	<dl class="red">
+								        		<dt><span>故障停机</span></dt>
+								        		<dd><strong>1</strong>台</dd>
+								        	</dl>
+								        	<dl class="gray">
+								        		<dt><span>通讯中断</span></dt>
+								        		<dd><strong>0</strong>台</dd>
+								        	</dl>
+							            </div>
+							            <div id="con_two_2" style="display:none;">
+							            	<dl class="green">
+								        		<dt><span>正常运行</span></dt>
+								        		<dd><strong>56</strong>台</dd>
+								        	</dl>
+								        	<dl class="yellow">
+								        		<dt><span>正常停机</span></dt>
+								        		<dd><strong>10</strong>台</dd>
+								        	</dl>
+								        	<dl class="orange">
+								        		<dt><span>告警运行</span></dt>
+								        		<dd><strong>3</strong>台</dd>
+								        	</dl>
+								        	<dl class="red">
+								        		<dt><span>故障停机</span></dt>
+								        		<dd><strong>1</strong>台</dd>
+								        	</dl>
+								        	<dl class="gray">
+								        		<dt><span>通讯中断</span></dt>
+								        		<dd><strong>0</strong>台</dd>
+								        	</dl>
+							            </div>
+							            <div id="con_two_3" style="display:none;">
+							            	<dl class="green">
+								        		<dt><span>正常运行</span></dt>
+								        		<dd><strong>56</strong>台</dd>
+								        	</dl>
+								        	<dl class="yellow">
+								        		<dt><span>正常停机</span></dt>
+								        		<dd><strong>10</strong>台</dd>
+								        	</dl>
+								        	<dl class="orange">
+								        		<dt><span>告警运行</span></dt>
+								        		<dd><strong>3</strong>台</dd>
+								        	</dl>
+								        	<dl class="red">
+								        		<dt><span>故障停机</span></dt>
+								        		<dd><strong>1</strong>台</dd>
+								        	</dl>
+								        	<dl class="gray">
+								        		<dt><span>通讯中断</span></dt>
+								        		<dd><strong>0</strong>台</dd>
+								        	</dl>
+							            </div>
+							        </div>
+						        </div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+	<html>

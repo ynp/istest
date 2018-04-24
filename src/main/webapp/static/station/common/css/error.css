@@ -1,0 +1,9 @@
+.error{width:426px;margin:0 auto;border:#fff solid 1px;font-family:Microsoft Yahei,SimHei;}
+.login-logo a{font-size:16px;color:#333;text-align:center;}
+.error_img{width:100%;text-align:center;} 
+.error_img img{text-align:center;}
+.error_text{width:100%;} 
+.error_text h2{font-size:100px;color:#555a6c;text-align:center;}
+.error_text h3{font-size:50px;color:#333;text-align:center;margin:20px auto}
+.error_text p{font-size:16px;line-height:20px;color:#7b7fa2;text-align:center;margin:20px auto}
+.error_text a{display:block;text-align:center;width:150px;height:40px;line-height:40px;font-size:14px;color:#fff;background:#e58c16;text-decoration:none;margin:0 auto;}
